@@ -27,3 +27,7 @@ UX point of view:
 - it's important to remember that the bigger your form, the more you risk frustrating people and losing users.
 
 Form Validation:
+- required
+- minlength/maxlength
+- min/max(max range validation for number, dates and time inputs)
+- pattern
