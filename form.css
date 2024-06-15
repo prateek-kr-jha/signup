@@ -1,3 +1,17 @@
+.form-container {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 input {
     border: 2px solid #000;
     margin-bottom: 15px;
