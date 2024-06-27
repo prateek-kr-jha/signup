@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="http://127.0.0.1:3030/home" method="post"><label for="first_name">*First Name:</label> <input
+                id="first_name" placeholder="John" name="first_name" required> <label for="user_email">*Email
+                Address:</label> <input type="email" id="user_email" name="email" placeholder="john@test.com" required>
+            <label for="user_password">*Password:</label> <input type="password" id="user_password" name="password"
+                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required> <label
+                for="user_age">Age:</label> <input type="number" id="user_age" name="age" min="18"> <label
+                for="user_dob">Email Address:</label> <input type="date" id="user_dob" name="dob"> <label
+                for="user_bio">Bio:</label> <textarea id="user_bio" name="bio" rows="20" cols="60" minlength="20"
+                maxlength="120"></textarea> <label for="user_country">Country:</label> <select name="country"
+                id="user_country">
+                <optgroup label="">
+                    <option value="india" selected="selected">India</option>
+                </optgroup>
+                <optgroup label="">
+                    <option value="ireland">Ireland</option>
+                </optgroup>
+                <optgroup label="">
+                    <option value="australia">Australia</option>
+                </optgroup>
+                <optgroup label="">
+                    <option value="mexico">Mexico</option>
+                </optgroup>
+                <optgroup label="">
+                    <option value="egypt">Egypt</option>
+                </optgroup>
+            </select>
+            <div><label for="gender">Male</label> <input type="radio" id="gender" name="gender" value="male"> <label
+                    for="gender">Female</label> <input type="radio" id="gender" name="gender" value="female"> <label
+                    for="gender">Don't want to disclose</label> <input type="radio" id="gender" name="gender" value="">
+            </div>
+            <div><label for="user_hobbies">Hobbies:</label> <label for="user_hobbies">Sports</label> <input
+                    type="checkbox" id="user_hobbies" name="hobbies" value="sports"> <label
+                    for="user_hobbies">Novels</label> <input type="checkbox" id="user_hobbies" name="hobbies"
+                    value="novels"> <label for="user_hobbies">Movies</label> <input type="checkbox" id="user_hobbies"
+                    name="hobbies" value="movies"> <label for="user_hobbies">Music</label> <input type="checkbox"
+                    id="user_hobbies" name="hobbies" value="music"></div><button type="submit">Submit</button> <button
+                type="reset">Reset</button>
+        </form>
+    </div>
+    <script defer="defer" src="index.bundle.js"></script>
+</body>
+
+</html>
